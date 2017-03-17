@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/full-width-pics.css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-color navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="padd20">
+	<img href="#" style="height:40px;" src="css/homeicon.png">
+
+      <span id="home-icon">invisalign</span>
+	    
+	<div class="pull-right">	
+		<img href="#" src="css/facebook.png">
+		<img href="#" src="css/twitter_bird.png">
+		<img href="#" src="css/original.png">
+		
+<div class="btn-group mrg15">
+                <button class="btn dropdwn">United States</button>
+                <button class="btn dropdown-toggle toggle-align" data-toggle="dropdown"><span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">United States</a></li>
+                  <li><a href="#">United States</a></li>
+                  <li><a href="#">United States</a></li>
+                  
+                </ul>
+              </div>
+
+	  </div>
+    </div>
+   
+  </div>
+</nav>
+  <form name="form1" method="post" onsubmit='return formValidation()'>
+
+<div class="container details">
+  <h2>Please register</h2>
+  <label>You'll get tips about caring for your aligners and learn about your new smile. </label>
+  <div class="row">
+    <div class="col-md-4">
+       <label for="firstName">First Name *</label>
+	   
+	     <a href="#" data-toggle="tooltip" class="pull-right" title="Please enter your first name with maximum length of 12"><img class="help-icon" href="#" src="css/help.png"></a>
+
+      <input type="text" class="form-control" id="firstName" maxlength=12 required>
+	  <p id="p1" style="color:red;"></p>
+    </div>
+    <div class="col-md-4"> 
+      <label for="lastName">Last Name *</label>
+		<a href="#" data-toggle="tooltip" class="pull-right" title="Please enter your last name with maximum length of 12"><img class="help-icon" href="#" src="css/help.png"></a>
+      <input type="text" class="form-control" id="lastName"  maxlength=12 required >
+	  	  <p id="p2" style="color:red;"></p>
+
+    </div>
+    <div class="col-md-4"> 
+       <label for="alignerNumber">Your Aligner Number *</label>
+		<a href="#" data-toggle="tooltip" class="pull-right" title="Enter Aligner Number"><img class="help-icon" href="#" src="css/help.png"></a>
+		<input type="number" class="form-control" id="alignerNumber" minlength =5 maxlength=12 required>
+	  <p id="p3" ></p>
+    </div>
+  </div>
+  <p></p>
+  
+  <div class="row">
+    <div class="col-md-4">
+       <label for="cardCode">Welcome Card Code</label>
+      <input type="number" class="form-control" id="cardCode" >
+	  <p id="p4"></p>
+    </div>
+    <div class="col-md-4"> 
+      <label for="email">Your Email *</label>
+       <input type="email" class="form-control" id="email" required>
+	   <p id="p5"></p>
+    </div>
+    <div class="col-md-4"> 
+       <label for="parentEmail">Your Parent's Email *</label>
+      <input type="email" class="form-control" id="parentEmail">
+	  <p id="p6"></p>
+    </div>
+  </div>
+  <br>
+  <p style="font-style:italic">* Required</p>
+  <div class="row">
+  <div class="checkbox col-md-8">
+	      <label style="font-size: 12px"><input type="checkbox" required>By checking this box, I agree to receive information about Invisalign treatment and treatment offers from partners of Align Technology , Inc. by e-mail, mobile phone, yext, or other means to which I consent. This information may contain speacial offers, useful tips and information on local providers, as well as requests for feedback about your treatment and consultation experience for information and research purposes.<br><br>We respect your privacy. We will never sell or rent any idenfiable information regarding you, our customer, to any third party. For more information view our Privacy Statement. </label>
+		   <p id="p7"></p>
+  </div>
+  <div class="col-md-4">
+		       <label class="dclr-checkbox"><input class="largerCheckbox mrg5" type="checkbox"  required>I'm not a robot<img class="img-cap pull-right" src="css/reCaptcha.png" ></label>
+			    
+  </div>
+</div>
+<div class="col-md-offset-8 col-md-4">
+  <button  class="btn btn-success " style="width:100%" id="submit" type='submit' value='Check Form'>S U B M I T</button>
+</div>
+</form>
+</body>
+</html>
